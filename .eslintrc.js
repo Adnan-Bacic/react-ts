@@ -26,5 +26,6 @@ module.exports = {
   ],
   rules: {
     //'react/jsx-filename-extension': [0, { extensions: ['.tsx'] }],
+    "arrow-body-style": ['warn', 'always']
   },
 };
