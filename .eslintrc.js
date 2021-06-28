@@ -25,7 +25,7 @@ module.exports = {
     'react-hooks',
   ],
   rules: {
-    //'react/jsx-filename-extension': [0, { extensions: ['.tsx'] }],
+    //'import/extensions': [0, { extensions: ['.tsx', '.ts', '.js'] }],
     "arrow-body-style": ['warn', 'always'],
     'import/prefer-default-export': 'off',
   },
