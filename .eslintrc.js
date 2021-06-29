@@ -28,5 +28,10 @@ module.exports = {
     //'import/extensions': [0, { extensions: ['.tsx', '.ts', '.js'] }],
     "arrow-body-style": ['warn', 'always'],
     'import/prefer-default-export': 'off',
+    "react/destructuring-assignment": ['off'],
+    "jsx-a11y/control-has-associated-label": [0, 'always'],
+    "react/destructuring-assignment": [0, 'always'],
+    'react/prefer-stateless-function': [0, 'always'],
+    'react/button-has-type': [0, 'always']
   },
 };

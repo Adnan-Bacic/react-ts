@@ -1,9 +1,9 @@
 import About from './static/About';
 import NotFound from './static/NotFound';
 
-import StartPage from './StartPage';
+import Home from './Home';
 
 export {
   About, NotFound,
-  StartPage,
+  Home,
 };
