@@ -4,16 +4,17 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import store from './redux/configureStore';
+// import store from './redux/configureStore';
+import { reduxToolkitStore } from './reduxToolkit/store';
 
 ReactDOM.render(
-  <Provider store={store}>
+  <Provider store={reduxToolkitStore}>
     <React.StrictMode>
       <button
         className="btn btn-primary"
         type="button"
         onClick={() => {
-          console.log('STORE', store.getState());
+          console.log('STORE', reduxToolkitStore.getState());
         }}
       >
         log redux store

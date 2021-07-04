@@ -17,7 +17,7 @@ const Router = () => {
           <Route exact path="/about" component={Pages.About} />
           <Route path="*" component={Pages.NotFound} />
         </Switch>
-        {ui.isLoading && (
+        {ui?.isLoading && (
         <Components.Spinner />
         )}
         <Includes.Footer />
