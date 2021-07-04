@@ -1,5 +1,5 @@
 // redux
-export interface Reducer {
+export interface Reducer<T> {
   type: string,
-  payload: any
+  payload: T
 }

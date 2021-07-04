@@ -6,3 +6,10 @@ export const setIsLoading = (isLoading: boolean) => {
     payload: isLoading,
   };
 };
+
+export const test = (test1: string) => {
+  return {
+    type: 'test',
+    payload: test1,
+  };
+};
