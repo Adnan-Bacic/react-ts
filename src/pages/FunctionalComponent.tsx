@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
 import * as functions from '../redux/functions';
-import * as rToolkit from '../reduxToolkit/ui/actions';
-import { Counter } from '../components';
-import { useAppDispatch } from '../reduxToolkit/hooks';
+import { Counter, Loading, User } from '../components';
 
 const FunctionalComponent = () => {
   const [name, setName] = useState('name');
-  const dispatch = useAppDispatch();
 
   return (
     <>
@@ -33,25 +30,10 @@ const FunctionalComponent = () => {
         </button>
         <p>redux toolkit counter:</p>
         <Counter />
-        <p>createAction():</p>
-        <button onClick={() => {
-          dispatch(rToolkit.startLoadingFunc());
-        }}
-        >
-          start loading
-        </button>
-        <button onClick={() => {
-          dispatch(rToolkit.stopLoading());
-        }}
-        >
-          stop loading
-        </button>
-        <button onClick={() => {
-          dispatch(rToolkit.setLoading(true));
-        }}
-        >
-          set loading(param)
-        </button>
+        <p>redux toolkit loading:</p>
+        <Loading />
+        <p>redux toolkit user:</p>
+        <User />
       </div>
     </>
   );

@@ -1,11 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit';
 import counterReducer from './counter/counterSlice';
 import { uiReducer } from './ui/uiReducer';
+import userReducer from './user/userReducer';
 
 export const reduxToolkitStore = configureStore({
   reducer: {
     counter: counterReducer,
     ui: uiReducer,
+    user: userReducer,
   },
 });
 

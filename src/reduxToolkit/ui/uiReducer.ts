@@ -11,14 +11,13 @@ const initialState: State = {
 };
 
 export const uiReducer = createReducer(initialState, (builder) => {
-  builder
-    .addCase(actions.startLoading, (state) => {
-      state.isLoading = true;
-    })
-    .addCase(actions.stopLoading, (state) => {
-      state.isLoading = false;
-    })
-    .addCase(actions.setLoading, (state, action) => {
-      state.isLoading = action.payload;
-    });
+  builder.addCase(actions.startLoading, (state) => {
+    state.isLoading = true;
+  });
+  builder.addCase(actions.stopLoading, (state) => {
+    state.isLoading = false;
+  });
+  builder.addCase(actions.setLoading, (state, action) => {
+    state.isLoading = action.payload;
+  });
 });

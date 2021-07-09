@@ -1,6 +1,9 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react';
 // import { useSelector, useDispatch } from 'react-redux';
-import { decrement, increment, incrementByAmount } from '../reduxToolkit/counter/counterSlice';
+import {
+  decrement, increment, incrementByAmount, selectCount,
+} from '../reduxToolkit/counter/counterSlice';
 import { useAppDispatch, useAppSelector } from '../reduxToolkit/hooks';
 
 const Counter = () => {
@@ -10,6 +13,8 @@ const Counter = () => {
   // defining types before import so we dont have to write it every time
   const count = useAppSelector((state) => { return state.counter; });
   const dispatch = useAppDispatch();
+
+  // console.log('selectCount ', selectCount());
 
   return (
     <div>
